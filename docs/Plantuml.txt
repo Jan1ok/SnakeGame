@@ -1,0 +1,14 @@
+@startuml
+rectangle Диаграмма_прецедентов {
+left to right direction
+skinparam packageStyle rectangle
+actor User
+rectangle (Игра) {
+User --> ( Регистрация ) 
+User --> (Вход в систему) 
+User --> (Создать игру)
+User --> (Выбрать игру)
+User --> (Играть)
+User --> (Смотреть статистику)
+}
+@enduml
